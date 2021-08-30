@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<script type="text/javascript"  src="register.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -202,7 +205,6 @@
                 <div class="col-lg-8 col-sm-12">
                     <div class="contact-form-right">
                         <h2>REGISTRO:</h2>
-                        <form id="contactForm">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
@@ -218,23 +220,21 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="Contraseña" name="name" placeholder="Contraseña" required data-error="Please enter your Subject">
+                                        <input type="text" class="form-control" id="Contrasenya" name="name" placeholder="Contraseña" required data-error="Please enter your Subject">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="Repetir Contraseña" name="name" placeholder="Repetir Contraseña" required data-error="Please enter your Subject">
+                                        <input type="text" class="form-control" id="Repetir contrasenya" name="name" placeholder="Repetir Contraseña" required data-error="Please enter your Subject">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="submit-button text-center">
-                                        <button class="btn hvr-hover" id="submit" type="submit">Registrarse</button>
-                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                        <div class="clearfix"></div>
+                                        <button class="btn hvr-hover" onclick="registerFunc()"  type="submit">Registrarse</button>
+
                                     </div>
                                 </div>
                             </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -293,6 +293,8 @@
     <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
     <!-- JAVA SCRIPT -->
+    <script type="text/javascript"  src="register.js"></script>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

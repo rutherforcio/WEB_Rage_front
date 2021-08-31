@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<script type="text/javascript"  src="mat.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -193,7 +196,7 @@
     </div>
     <!-- FIN CAJA TITULO -->
 
-    <!-- INICIO PAGINA RATONES  -->
+    <!-- INICIO PAGINA ALFOMBRILLAS  -->
     <div class="shop-box-inner">
         <div class="container">
             <div class="row">
@@ -265,44 +268,7 @@
                         <div class="row product-categorie-box">
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade show active" id="grid-view">
-                                    <div class="row">
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                            <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <img src="images/alfombrilla_normalSize.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Añadir al carrito</a>
-                                                    </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Alfombrilla mediana estampado RAGER</h4>
-                                                    <h5> 21.99€</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                            <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <img src="images/alfombrilla_top.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Añadir al carrito</a>
-                                                    </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Alfombrilla XL RAGER + RGB </h4>
-                                                    <h5> 60.00€</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div class="row" id="listProducts"></div>
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade" id="list-view">
                                     <div class="list-view-box">
@@ -420,6 +386,8 @@
     <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
     <!-- JAVA SCRIPT -->
+    <script type="text/javascript"  src="mat.js"></script>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

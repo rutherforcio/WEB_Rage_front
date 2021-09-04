@@ -1,6 +1,6 @@
 async function list() {
     const headers = { 'Content-Type': 'application/json',  mode: "no-cors"}
-    const msg = JSON.stringify({ tipo: "Teclado" });
+    const msg = JSON.stringify({ tipo: "Alfombrilla" });
     
     const res = await axios.post('http://localhost:5000/tipeProducts', msg, {headers: headers})
         .catch(function (error) {

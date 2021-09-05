@@ -1,11 +1,13 @@
 async function list() {
-    const headers = { 'Content-Type': 'application/json',  mode: "no-cors"}
+    const headers = { 'Content-Type': 'application/json',  mode: "no-cors", withCredentials: true }
     const msg = JSON.stringify({ tipo: "Raton" });
     
-    const res = await axios.post('http://localhost:5000/tipeProducts', msg, {headers: headers})
+    const res = await axios.post('http://localhost:5000/tipeProducts', {
+        "tipo":"Raton"
+    }, {headers: headers})
         .catch(function (error) {
             if (error.response) {
-
+                console.log(error.response)
             }
         });
 
